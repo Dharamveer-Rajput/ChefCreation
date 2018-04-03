@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/futer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/menuImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/menuwhite" />
+
+            <TextView
+                android:id="@+id/tvMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Menu"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/wishlistImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/wishlist" />
+
+            <TextView
+                android:id="@+id/tvWishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Wishlist"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageBasket"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basket"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/tvBasket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Basket"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageAccount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/account"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Account" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

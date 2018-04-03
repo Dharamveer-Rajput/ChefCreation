@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/round_layout_corners">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_layout_corners"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:id="@+id/outside_imageview"
+            android:layout_width="100dp"
+            android:layout_margin="10dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="The best Chef Creations"
+            android:textSize="20dp"
+            android:textColor="#ffff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Eat Healthy and Live Healthy"
+            android:textSize="20dp"
+            android:textColor="#ffff"/>
+
+        <Button
+            android:id="@+id/swipeButton"
+            android:layout_margin="10dp"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/swipe"
+            android:text="Swipe to See Why"
+            android:drawableRight="@drawable/ic_forward_black_24dp"
+            android:textColor="#ffff"
+            android:textSize="14dp" />
+
+        <!--<me.relex.circleindicator.CircleIndicator-->
+            <!--android:id="@+id/indicator"-->
+            <!--app:ci_drawable="@color/red"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"/>-->
+
+
+    </LinearLayout>
+</RelativeLayout>
+    </RelativeLayout>

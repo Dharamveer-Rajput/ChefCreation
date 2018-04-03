@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="350dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/round_layout_corners">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </android.support.v4.view.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_alignParentBottom="true"
+            app:ci_drawable="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lower_layout"
+        android:layout_below="@+id/upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+      android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_layout_fastred">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/two_button_layout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                >
+                <Button
+                    android:id="@+id/signButton"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/signbutton"
+                    android:text="Sign In"
+                    android:textColor="#b71c1c"
+                    />
+                <Button
+                    android:id="@+id/signUpButton"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/signbutton"
+                    android:text="Sign Up"
+                    android:textColor="#b71c1c"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_below="@+id/two_button_layout"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_alignParentBottom="true"
+                >
+                <Button
+                    android:id="@+id/signInAdminButton"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button"
+                    android:text="Sign in for Admin"
+                    android:textColor="#ffff"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

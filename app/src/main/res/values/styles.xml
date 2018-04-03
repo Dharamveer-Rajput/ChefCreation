@@ -1,0 +1,58 @@
+<resources>
+
+
+
+
+
+    <style name="MyCardViewStyle" parent="CardView">
+        <!-- Card background color -->
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <!-- Ripple for API 21 of android, and regular selector on older -->
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <!-- Resting Elevation from Material guidelines -->
+        <item name="cardElevation">2dp</item>
+        <!-- Add corner Radius -->
+        <item name="cardCornerRadius">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">#ff0000</item>
+
+    </style>
+
+    <style name="MyDialogTheme" parent="@android:style/Theme.Dialog">
+
+        <item name="android:bottomBright">@color/white</item>
+        <item name="android:bottomDark">@color/white</item>
+        <item name="android:bottomMedium">@color/white</item>
+        <item name="android:centerBright">@color/white</item>
+        <item name="android:centerDark">@color/white</item>
+        <item name="android:centerMedium">@color/white</item>
+        <item name="android:fullBright">@color/orange</item>
+        <item name="android:fullDark">@color/orange</item>
+        <item name="android:topBright">@color/blue</item>
+        <item name="android:topDark">@color/blue</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    
+
+
+
+
+
+</resources>

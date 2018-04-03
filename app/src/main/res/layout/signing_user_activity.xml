@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.ventures.smartit.chefcreation.Activities.SigningUserActivity">
+
+    <!-- Header alignedo top -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/outside_imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginRight="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo"/>
+        </LinearLayout>
+<LinearLayout
+    android:id="@+id/buttonLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:layout_below="@+id/linearLayout"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <Button
+        android:id="@+id/ButtonSignin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:text="Sign In"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:background="@drawable/futer"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#ffff" />
+
+    <Button
+        android:id="@+id/ButtonSignup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/futer"
+        android:textColor="#ffff"
+        android:text="Sign Up"
+        android:textSize="20dp" />
+</LinearLayout>
+<FrameLayout
+    android:id="@+id/my_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/buttonLayout"
+    >
+
+</FrameLayout>
+
+</RelativeLayout>
+

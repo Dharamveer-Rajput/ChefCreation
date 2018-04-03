@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "199001088190",
+    "project_id": "chefcreation-166707"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199001088190:android:bdf3e6775035d69d",
+        "android_client_info": {
+          "package_name": "com.ventures.smartit.chefcreation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199001088190-pj5hon9lq30qvuj4j9skutgqlom25td5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ventures.smartit.chefcreation",
+            "certificate_hash": "1748181e8fe54fdbfa8087547d71e020a4e8ccce"
+          }
+        },
+        {
+          "client_id": "199001088190-mg1afp1cg3rjthppfvdo8d96p5inhjol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLFjSPQGfyvcdX0xNDNarrjbqevZZyz9c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

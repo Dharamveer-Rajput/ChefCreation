@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ventures.smartit.chefcreation">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".Activities.Splash_Screen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+
+             <!--<intent-filter>-->
+             <!--<action android:name="android.intent.action.MAIN" />-->
+
+
+             <!--<category android:name="android.intent.category.LAUNCHER" />-->
+             <!--</intent-filter>-->
+        </activity>
+
+        <!-- Main activity -->
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <!-- SIgn Up Activity -->
+        <activity
+            android:name=".Activities.SigningUserActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <!-- Menu Activity -->
+        <activity
+            android:name=".UI.Menu"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Admin_Layout_Class"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+
+             <!--<intent-filter>-->
+             <!--<action android:name="android.intent.action.MAIN"/>-->
+             <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+             <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".AccountUpdateDialog">
+
+        </activity>
+    </application>
+
+</manifest>
